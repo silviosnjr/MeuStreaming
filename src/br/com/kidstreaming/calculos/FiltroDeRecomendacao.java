@@ -1,4 +1,4 @@
-package br.com.kistreamin.calculos;
+package br.com.kidstreaming.calculos;
 
 public class FiltroDeRecomendacao {
     private String recomendacao;

@@ -1,4 +1,4 @@
-package br.com.kistreamin.calculos;
+package br.com.kidstreaming.calculos;
 
 import br.com.kidstreaming.modelos.Filme;
 import br.com.kidstreaming.modelos.Serie;

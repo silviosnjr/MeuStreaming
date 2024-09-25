@@ -1,6 +1,6 @@
 package br.com.kidstreaming.modelos;
 
-import br.com.kistreamin.calculos.Classificavel;
+import br.com.kidstreaming.calculos.Classificavel;
 
 public class Episodio implements Classificavel {
     private int numero;

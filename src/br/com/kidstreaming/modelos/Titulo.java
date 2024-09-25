@@ -1,13 +1,18 @@
 package br.com.kidstreaming.modelos;
 
 /*Generalização | Classe genérica | SuperClasse*/
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     private String nome;
     private int anoLancamento;
     private boolean incluidoNoAno;
     private double somaDasAvaliacoes; //private modificador de acesso
     private int totalDeAvaliacao;
     private int duracaoEmMinutos;
+
+    public Titulo(String nome, int anoLancamento) {
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
 
     public String getNome() {
         return nome;
@@ -54,5 +59,10 @@ public class Titulo {
 
     public double pegaMedia(){
         return somaDasAvaliacoes/totalDeAvaliacao;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
